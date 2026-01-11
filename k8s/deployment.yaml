@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suomitopchance-games-ppc-social
+  labels:
+    app: suomitopchance-games-ppc-social
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: suomitopchance-games-ppc-social
+  template:
+    metadata:
+      labels:
+        app: suomitopchance-games-ppc-social
+    spec:
+      containers:
+        - name: suomitopchance-games-ppc-social
+          image: IMAGE_PLACEHOLDER
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: suomitopchance-games-ppc-social
+  labels:
+    app: suomitopchance-games-ppc-social
+spec:
+  type: LoadBalancer
+  selector:
+    app: suomitopchance-games-ppc-social
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  loadBalancerIP: LOAD_BALANCER_IP_PLACEHOLDER
