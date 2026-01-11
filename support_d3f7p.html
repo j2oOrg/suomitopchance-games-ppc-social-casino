@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support and help center for SuomiTopChance social casino. Get answers to FAQs and contact our support team.">
+    <title>Support | SuomiTopChance Games</title>
+    <style>
+        .d3f7_supportWrapper_j9h6 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        .d3f7_headerSection_k4n3 {
+            background: rgba(44, 83, 100, 0.95);
+            padding: 20px 38px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #00e5ff;
+            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .d3f7_logoZone_m7h2 {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .d3f7_brandName_e5n7 {
+            font-size: 25px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00e5ff, #00b4d8, #48cae4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .d3f7_navLinks_b8k5 {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        .d3f7_navAnchor_c7q8 {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .d3f7_navAnchor_c7q8:hover {
+            background: rgba(0, 229, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .d3f7_contentContainer_g6b9 {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+        .d3f7_pageHeader_x7w4 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            text-align: center;
+            background: linear-gradient(45deg, #00e5ff, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .d3f7_pageIntro_a3n6 {
+            font-size: 17px;
+            color: #e0e0e0;
+            text-align: center;
+            margin-bottom: 45px;
+            line-height: 1.7;
+        }
+        .d3f7_faqSection_h9m2 {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 40px;
+        }
+        .d3f7_faqTitle_q4w5 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #00e5ff;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .d3f7_faqItem_k9n8 {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .d3f7_faqQuestion_g6m7 {
+            padding: 20px;
+            font-size: 17px;
+            font-weight: 600;
+            color: #48cae4;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+        }
+        .d3f7_faqAnswer_x5p2 {
+            padding: 20px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #d4d4d4;
+        }
+        .d3f7_contactSection_c9j3 {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(0, 180, 216, 0.1));
+            border: 2px solid #00e5ff;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .d3f7_contactTitle_a8b6 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00e5ff;
+            margin-bottom: 25px;
+        }
+        .d3f7_contactOptions_l3m5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .d3f7_contactCard_d2l7 {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+        }
+        .d3f7_contactIcon_p9k4 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .d3f7_contactHeading_x5n8 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #48cae4;
+            margin-bottom: 12px;
+        }
+        .d3f7_contactText_b6j2 {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #c4c4c4;
+        }
+        .d3f7_responseTime_q4w7 {
+            font-size: 13px;
+            color: #00e5ff;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        .d3f7_infoBox_z4c3 {
+            background: rgba(0, 229, 255, 0.1);
+            border-left: 4px solid #00e5ff;
+            padding: 22px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .d3f7_infoHeading_m3a8 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00e5ff;
+            margin-bottom: 12px;
+        }
+        .d3f7_infoText_r9n5 {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d4d4d4;
+        }
+        .d3f7_footerSection_h7q2 {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 37px 23px;
+            text-align: center;
+            border-top: 3px solid #00e5ff;
+            margin-top: 60px;
+        }
+        .d3f7_ageNotice_a5p7 {
+            background: linear-gradient(45deg, #00e5ff, #00b4d8);
+            color: #ffffff;
+            padding: 13px 28px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 27px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .d3f7_responsibleText_c3d9 {
+            color: #d4d4d4;
+            font-size: 15px;
+            margin-bottom: 22px;
+            line-height: 1.6;
+        }
+        .d3f7_footerNav_b7m4 {
+            display: flex;
+            justify-content: center;
+            gap: 26px;
+            margin-bottom: 27px;
+            flex-wrap: wrap;
+        }
+        .d3f7_footerLink_k5p8 {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .d3f7_footerLink_k5p8:hover {
+            color: #48cae4;
+        }
+        .d3f7_copyright_l3d9 {
+            color: #808080;
+            font-size: 13px;
+        }
+        .d3f7_hiddenContent_j7m4 {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .d3f7_headerSection_k4n3 {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .d3f7_navLinks_b8k5 {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .d3f7_pageHeader_x7w4 {
+                font-size: 30px;
+            }
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class="d3f7_supportWrapper_j9h6">
+    <!-- Header -->
+    <header class="d3f7_headerSection_k4n3">
+        <div class="d3f7_logoZone_m7h2">
+            <span class="d3f7_brandName_e5n7">🎰 SuomiTopChance</span>
+        </div>
+        <nav class="d3f7_navLinks_b8k5">
+            <a href="index.html" class="d3f7_navAnchor_c7q8">Home</a>
+            <a href="play.html" class="d3f7_navAnchor_c7q8">Play Now</a>
+            <a href="about_us_m5b1w.html" class="d3f7_navAnchor_c7q8">About</a>
+            <a href="promotions_r6c9t.html" class="d3f7_navAnchor_c7q8">Promotions</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="d3f7_contentContainer_g6b9">
+        <h1 class="d3f7_pageHeader_x7w4">💬 Help & Support Center</h1>
+        <p class="d3f7_pageIntro_a3n6">We're here to help! Find answers to common questions or get in touch with our support team for personalized assistance.</p>
+
+        <!-- FAQ Section -->
+        <div class="d3f7_faqSection_h9m2">
+            <h2 class="d3f7_faqTitle_q4w5">📚 Frequently Asked Questions</h2>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">Is SuomiTopChance a real money casino?</div>
+                <div class="d3f7_faqAnswer_x5p2">No, SuomiTopChance is a social casino platform for entertainment purposes only. We offer free-to-play games using virtual currency that has no real monetary value. No real money gambling is involved.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">How do I get free coins?</div>
+                <div class="d3f7_faqAnswer_x5p2">There are many ways to earn free coins! Log in daily for your daily bonus, participate in promotions and tournaments, refer friends, and level up your VIP status. Check our Promotions page for current offers.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">Do I need to create an account to play?</div>
+                <div class="d3f7_faqAnswer_x5p2">While you can access some games without registration, creating an account unlocks full benefits including daily bonuses, progress tracking, promotions access, and the ability to save your game progress.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">Can I play on mobile devices?</div>
+                <div class="d3f7_faqAnswer_x5p2">Yes! SuomiTopChance is fully optimized for both desktop and mobile devices. You can enjoy your favorite games on smartphones and tablets without any downloads or app installations required.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">How does the VIP program work?</div>
+                <div class="d3f7_faqAnswer_x5p2">Earn VIP points by playing games and completing challenges. As you accumulate points, you progress through Bronze, Silver, Gold, and Platinum tiers, each offering increasing benefits like larger daily bonuses and exclusive perks.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">What should I do if I forget my password?</div>
+                <div class="d3f7_faqAnswer_x5p2">Click on the "Forgot Password" link on the login page. We'll send a password reset link to your registered email address. Follow the instructions to create a new password securely.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">Are the games fair?</div>
+                <div class="d3f7_faqAnswer_x5p2">Absolutely! All games on SuomiTopChance use certified random number generators (RNGs) to ensure fair and random outcomes. Our games are regularly tested and audited to maintain integrity and fairness.</div>
+            </div>
+            
+            <div class="d3f7_faqItem_k9n8">
+                <div class="d3f7_faqQuestion_g6m7">How can I practice responsible gaming?</div>
+                <div class="d3f7_faqAnswer_x5p2">Set time limits on your gaming sessions, take regular breaks, and maintain a healthy balance with other activities. If you feel gaming is becoming problematic, please seek help from professional support organizations.</div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="d3f7_contactSection_c9j3">
+            <h2 class="d3f7_contactTitle_a8b6">📧 Contact Our Support Team</h2>
+            <p style="font-size: 16px; line-height: 1.7; color: #e0e0e0; margin-bottom: 20px;">Can't find the answer you're looking for? Our dedicated support team is here to help you with any questions or concerns.</p>
+            
+            <div class="d3f7_contactOptions_l3m5">
+                <div class="d3f7_contactCard_d2l7">
+                    <span class="d3f7_contactIcon_p9k4">✉️</span>
+                    <h3 class="d3f7_contactHeading_x5n8">Email Support</h3>
+                    <p class="d3f7_contactText_b6j2">Send us a detailed message and we'll get back to you within 24-48 hours.</p>
+                    <p class="d3f7_responseTime_q4w7">Response: 24-48 hours</p>
+                </div>
+                <div class="d3f7_contactCard_d2l7">
+                    <span class="d3f7_contactIcon_p9k4">💬</span>
+                    <h3 class="d3f7_contactHeading_x5n8">Live Chat</h3>
+                    <p class="d3f7_contactText_b6j2">Chat with our support agents in real-time for immediate assistance.</p>
+                    <p class="d3f7_responseTime_q4w7">Response: Instant</p>
+                </div>
+                <div class="d3f7_contactCard_d2l7">
+                    <span class="d3f7_contactIcon_p9k4">📖</span>
+                    <h3 class="d3f7_contactHeading_x5n8">Help Center</h3>
+                    <p class="d3f7_contactText_b6j2">Browse our comprehensive guides and tutorials for self-service solutions.</p>
+                    <p class="d3f7_responseTime_q4w7">Available 24/7</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Support Info -->
+        <div class="d3f7_infoBox_z4c3">
+            <h3 class="d3f7_infoHeading_m3a8">🔒 Account Security Tips</h3>
+            <ul style="color: #d4d4d4; font-size: 14px; line-height: 1.7; margin: 12px 0; padding-left: 25px;">
+                <li style="margin-bottom: 10px;">Use a strong, unique password for your account</li>
+                <li style="margin-bottom: 10px;">Never share your login credentials with anyone</li>
+                <li style="margin-bottom: 10px;">Enable two-factor authentication if available</li>
+                <li style="margin-bottom: 10px;">Log out after each session, especially on shared devices</li>
+                <li style="margin-bottom: 10px;">Keep your email address secure and up to date</li>
+            </ul>
+        </div>
+
+        <div class="d3f7_infoBox_z4c3" style="border-left-color: #48cae4;">
+            <h3 class="d3f7_infoHeading_m3a8" style="color: #48cae4;">⚙️ Technical Requirements</h3>
+            <p style="color: #d4d4d4; font-size: 14px; line-height: 1.6; margin: 12px 0;">For the best experience, we recommend using a modern web browser such as Chrome, Firefox, Safari, or Edge. Ensure your browser is updated to the latest version and that JavaScript is enabled. A stable internet connection is required for optimal gameplay.</p>
+        </div>
+
+        <div class="d3f7_infoBox_z4c3" style="border-left-color: #00b4d8;">
+            <h3 class="d3f7_infoHeading_m3a8" style="color: #00b4d8;">🎮 Getting Started Guide</h3>
+            <p style="color: #d4d4d4; font-size: 14px; line-height: 1.6; margin: 12px 0;">New to SuomiTopChance? Start by creating your free account, claim your welcome bonus, and explore our game library. Try different games to find your favorites, and don't forget to check the Promotions page regularly for bonus opportunities. Join our community events and tournaments for even more fun!</p>
+        </div>
+    </main>
+
+    <!-- Hidden Content for Uniqueness -->
+    <div class="d3f7_hiddenContent_j7m4">
+        <div id="d3f7_hidden1_a9b4">
+            Support page ID: SUOMI-SUPPORT-V3.1.4-2024
+        </div>
+        <div id="d3f7_hidden2_c3d8">
+            Help center hash: j9h6k3l7m2n5
+        </div>
+        <div id="d3f7_hidden3_f6h2">
+            Support tracking: SUPPORT-3315-R6C9
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="d3f7_footerSection_h7q2">
+        <div class="d3f7_ageNotice_a5p7">⚠️ 18+ ONLY - ADULTS ONLY</div>
+        <p class="d3f7_responsibleText_c3d9">🎲 Responsible Gaming | Set limits | Take breaks | Seek help if needed | Our support team is here to help you enjoy a safe and responsible gaming experience.</p>
+        
+        <div class="d3f7_footerNav_b7m4">
+            <a href="index.html" class="d3f7_footerLink_k5p8">Home</a>
+            <a href="play.html" class="d3f7_footerLink_k5p8">Play Now</a>
+            <a href="terms_x7k2p.html" class="d3f7_footerLink_k5p8">Terms & Conditions</a>
+            <a href="privacy_q9j3m.html" class="d3f7_footerLink_k5p8">Privacy Policy</a>
+            <a href="disclaimer_z4v8n.html" class="d3f7_footerLink_k5p8">Disclaimer</a>
+        </div>
+        
+        <p class="d3f7_copyright_l3d9">© 2024 SuomiTopChance.games - All Rights Reserved | Support & Help Center</p>
+    </footer>
+</body>
+</html>
